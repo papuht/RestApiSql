@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "c9oxzTM+6PKBBLxu4eVX5+iQWi4EdDrgVwnwIb9cplo=",
+  "Source": "RestApiSql",
+  "BasePath": "_content/RestApiSql",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RestApiSql\\wwwroot",
+      "Source": "RestApiSql",
+      "ContentRoot": "E:\\Nortal\\RestApiSql\\wwwroot\\",
+      "BasePath": "_content/RestApiSql",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Nortal\\RestApiSql\\wwwroot\\css\\site.css",
+      "SourceId": "RestApiSql",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Nortal\\RestApiSql\\wwwroot\\",
+      "BasePath": "_content/RestApiSql",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "E:\\Nortal\\RestApiSql\\wwwroot\\index.html",
+      "SourceId": "RestApiSql",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Nortal\\RestApiSql\\wwwroot\\",
+      "BasePath": "_content/RestApiSql",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "E:\\Nortal\\RestApiSql\\wwwroot\\js\\site.js",
+      "SourceId": "RestApiSql",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Nortal\\RestApiSql\\wwwroot\\",
+      "BasePath": "_content/RestApiSql",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+﻿input[type='submit'], button, [aria-label] {
+    cursor: pointer;
+}
+
+body {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editMemberDiv {
+   display:none;
+
+}
+
+table {
+    font-family: Arial, sans-serif;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+th {
+    
+    padding: 5px;
+    border-radius: 6px;
+}
+
+td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    padding: 5px;
+}
+
+    td:hover {
+    
+        background-color: #eee;
+        
+    }
+
+
+
+.addMemberDiv {
+
+    border-style:none;
+    border-width: 0.5px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px 3px #eee; 
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addMemberForm {
+    margin: 10px;
+
+
+}
+
+.field {
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+    .button:hover {
+    
+        background-color: lightblue;
+        color: white;
+        border-color: white;
+    }
