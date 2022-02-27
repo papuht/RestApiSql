@@ -7,32 +7,32 @@
 </head>
 <body>
 
-    <div class="addMemberDiv">
-    <h1>Add member</h1>
+    <div id="addMember" class="addMemberDiv">
+    <h3 class="editHeader">Add member</h3>
     
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()" class="addMemberForm">
         <label>First name:</label><br />
-        <input type="text" id="add-firstname" placeholder="First Name" class="field">
+        <input type="text" id="add-firstname" placeholder="First Name" class="field" required>
         <br />
         <label>Last name:</label><br />
-        <input type="text" id="add-lastname" placeholder="Last Name" class="field" />
+        <input type="text" id="add-lastname" placeholder="Last Name" class="field" required />
         <br />
         <label>Address reference:</label><br />
-        <input type="number" id="add-address" placeholder="AddressKey"  class="field"/>
+        <input type="number" id="add-address" placeholder="AddressKey"  class="field" required/>
         <br />
         <label>Social security number:</label><br />
-        <input type="number" id="add-ssn" placeholder="Ssn"  class="field"/>
+        <input type="number" id="add-ssn" placeholder="Ssn"  class="field" required/>
         <br />
         <label>Birhtdate:</label><br />
-        <input type="date" id="add-birthdate" placeholder="Birthdate"  class="field"/>
+        <input type="date" id="add-birthdate" placeholder="Birthdate"  class="field" required/>
         <br />
         <input type="submit" value="Add" class="button">
     </form>
 
     </div>
 
-    <div id="editForm" class="addMemberDiv">
-        <h3>Edit</h3>
+    <div id="editForm" class="editMemberDiv">
+        <h3 class="editHeader">Edit</h3>
         <form action="javascript:void(0);" onsubmit="updateItem()" class="addMemberForm ">
            
             <input type="hidden" id="edit-id" required><br />
@@ -52,7 +52,7 @@
             <input type="date" id="edit-birthdate" class="field" required/>
             <br />
             <input type="submit" value="Edit" class="button">
-            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+            <a onclick="closeInput()" class="closeButton">Close</a>
         </form>
     </div>
 

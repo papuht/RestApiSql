@@ -1,12 +1,23 @@
-﻿const uri = '/api/members';
+﻿/*address to look api from 
+ */
+const uri = '/api/members';
 let todos = [];
 
+
+/*
+ * function to send GET -request 
+ * */
 function getItems() {
     fetch(uri)
         .then(response => response.json())
         .then(data => _displayItems(data))
         .catch(error => console.error('Unable to get items.', error));
 }
+
+
+/*
+ * function to send POST -request
+ * */
 
 function addItem() {
     const addFirstName = document.getElementById('add-firstname');
@@ -44,6 +55,11 @@ function addItem() {
         .catch(error => console.error('Unable to add item.', error));
 }
 
+/**
+ * 
+ * function to send DELETE -request
+ */
+
 function deleteItem(id) {
     fetch(`${uri}/${id}`, {
         method: 'DELETE'
@@ -52,8 +68,18 @@ function deleteItem(id) {
         .catch(error => console.error('Unable to delete item.', error));
 }
 
+
+/**
+ * 
+ * function to render the form for editing database item
+ */
+
 function displayEditForm(id) {
     const item = todos.find(item => item.id === id);
+
+    document.getElementById('editForm').style.display = 'flex';
+    document.getElementById('addMember').style.display = 'none';
+    
 
     document.getElementById('edit-id').value = item.id;
     document.getElementById('edit-firstname').value = item.firstName;
@@ -63,6 +89,12 @@ function displayEditForm(id) {
     document.getElementById('edit-birthdate').value = item.birthDate;
     document.getElementById('editForm').style.display = 'block';
 }
+
+
+/**
+ * function to send PUT -requests
+ * 
+ * */
 
 function updateItem() {
     const itemId = document.getElementById('edit-id').value;
@@ -94,15 +126,31 @@ function updateItem() {
     return false;
 }
 
+/** 
+ used with the previous function
+ */
+
 function closeInput() {
     document.getElementById('editForm').style.display = 'none';
+    document.getElementById('addMember').style.display = 'flex';
 }
+
+/**
+ * 
+ * function to display counter for items
+ */
 
 function _displayCount(itemCount) {
     const name = (itemCount === 1) ? 'member' : 'members';
 
     document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
+
+
+/**
+ * 
+ * function to create table contents from the API GET call
+ */
 
 function _displayItems(data) {
     const tBody = document.getElementById('todos');

@@ -10,9 +10,19 @@ body {
 }
 
 .editMemberDiv {
-   display:none;
-
+    display: none;
+    border-style: none;
+    border-width: 0.5px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px 3px #eee;
+    width: 200px;
+    
 }
+
+/*
+    table attributes
+
+*/
 
 table {
     font-family: Arial, sans-serif;
@@ -22,11 +32,22 @@ table {
     border-radius: 6px;
 }
 
+/*
+    table header attributes
+
+*/
+
 th {
     
     padding: 5px;
     border-radius: 6px;
 }
+
+/* 
+
+    table cell attributes
+
+*/
 
 td {
     border-style: solid;
@@ -43,17 +64,29 @@ td {
 
 
 
+    /*
+        div element to hold the forms
+
+    */
+
 .addMemberDiv {
 
     border-style:none;
     border-width: 0.5px;
     border-radius: 6px;
     box-shadow: 0px 0px 1px 3px #eee; 
-    width: 400px;
+    width: 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
+    margin: 10px;
 }
+
+
+    /* 
+
+        form element attributes
+    */
 
 .addMemberForm {
     margin: 10px;
@@ -61,16 +94,30 @@ td {
 
 }
 
+/*
+    input field attributes
+
+*/
+
 .field {
     border-radius: 6px;
     border-style: solid;
     border-width: 0.5px;
 }
 
+
+/*
+    button attributes
+
+*/
+
 .button {
     padding: 10px;
     margin: 5px;
     border-radius: 6px;
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    
 }
 
     .button:hover {
@@ -79,3 +126,27 @@ td {
         color: white;
         border-color: white;
     }
+
+.closeButton {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    
+    border-width: 0.1px;
+    background-color: #eee;
+    box-shadow: 2px 2px #808080;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.closeButton:hover {
+    background-color: lightblue;
+    color: white;
+    border-color: white;
+}
+
+.editHeader {
+    text-align: center;
+
+}

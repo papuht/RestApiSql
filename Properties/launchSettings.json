@@ -8,6 +8,12 @@
       "sslPort": 44341
     }
   },
+
+  /*
+  launchUrl must be uncommented and changed to api/members to launch this from actual server
+
+  */
+
   "profiles": {
     "RestApiSql": {
       "commandName": "IISExpress",

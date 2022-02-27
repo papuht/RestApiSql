@@ -1,4 +1,8 @@
-﻿namespace RestApiSql.Models
+﻿/*
+ Model for the database
+ */
+
+namespace RestApiSql.Models
 {
     public class Member
     {
